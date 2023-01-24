@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <metacharset="utf-8">
+        <meta charset="utf-8">
         <title>Greeting</title>
     </head>
     <body>
@@ -12,5 +12,5 @@
             <li>bad</li>
             <li>or okay</li>
         </ul>
-
     </body>
+<html>
