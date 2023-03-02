@@ -1,0 +1,21 @@
+body {
+    color: #02020A;
+    background-color: #FFFFFF;
+    }
+    a:link {
+        color: #FFAE03;
+    }
+    nav {
+        background-color: #FFAE03;
+    }
+    nav a {
+        color: #02020A;
+    }
+    nav a:hover {
+        background-color: #837A75;
+    }
+    nav {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
