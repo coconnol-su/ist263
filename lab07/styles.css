@@ -15,4 +15,6 @@ body {
         padding: 20px;
         margin-bottom: 30px;
     }
-
+    p {
+        margin-bottom: 10px;
+    }
