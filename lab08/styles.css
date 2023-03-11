@@ -1,0 +1,20 @@
+body {
+    color: #02020A;
+    background-color: #FFFFFF;
+    }
+    nav {
+        background-color: #4DC149;
+    }
+    nav a {
+        color: #02020A;
+    }
+    nav a:hover {
+        background-color: #D2D6DA;
+    }
+    nav {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    p {
+        margin-bottom: 10px;
+    }
