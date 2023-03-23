@@ -3,13 +3,13 @@ body {
     background-color: #FFFFFF;
     }
     nav {
-        background-color: #FFAE03;
+        background-color: #4DC149;
     }
     nav a {
         color: #02020A;
     }
     nav a:hover {
-        background-color: #837A75;
+        background-color: #D2D6DA;
     }
     nav {
         padding: 20px;
