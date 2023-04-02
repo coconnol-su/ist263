@@ -27,6 +27,7 @@ body {
     @media only screen and (max-width: 600px) {
         nav a {display: 100%;}
         nav a {display: block;}
+        span {display: none;}
     }
    
 
