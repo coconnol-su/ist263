@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Menu</title>
+    <!-- 
+        CSS
+       x 1. Large - no hamburger
+       x 2. Small - shhow hamburger
+       x 3. Large - no x
+        4. Small - show x 
+        5. Large - Links side by sid e
+        6. Small - Links stacked
+
+        JavsScript 
+        8. Hamburger Clock SHow the Links
+        ON X hide the links 
+
+    -->
+
+    <style>
+        #hamburger {
+            width: 50px;
+        }
+        .toplevel {
+            display: flex;
+        }
+        @media only screen and (min-width: 800px) {
+            #hamburger, #close {
+                display: none;
+            }
+            #alllinks {display: block;}
+        }
+        @media only screen and (max-width: 799px) {
+            .navlinks {display: block; background-color: #acacac}
+            #alllinks {display: none;}
+        }
+    </style>
+    <script>
+        function showNav () {
+            document.getElementById("alllinks").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <div class="toplevel">
+        <img id="hamburger" onclick="showNav();" src="https://laferger.github.io/ist263/images/hamburger.png">
+        <p id="close" onclick="hideNav();">X</p>
+    </div>
+    <div id="alllinks">
+        <a href="index.html" class="navlinks">Home</a>
+        <a href="skills.html" class="navlinks">Skills</a>
+        <a href="contact.html" class="navlinks">Contact</a>
+    </div>
+</body>
+</html>
