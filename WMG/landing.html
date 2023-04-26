@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Colin Connolly's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script>
+
         function message () {
-            alert("Please pay no mind to the construction and incomplete formatting. These are the beginning stages of a music review website that I am writing the entirety of the code for.");
+            alert("Please don't mind the construction, these are the beginning stages of a music review website that I am writing the code for.");
         }
     </script>
     <style>
+        @media only screen and (max-width: 600px) {
+            .cols {width: 100%}
+        }
         .skip {
             background-color: #4DC149;
             padding: 5px;
@@ -166,18 +173,24 @@
             float: left;
             margin-bottom: 5em;
         }
+        .rumours {
+            float: right;
+            margin-bottom: 5em;
+        }
         html {
             scroll-behavior: smooth;
         }
         hr {
-            border: 2px solid #4ba928;
-            border-radius: 4px;
+            border: 5px solid green;
+            border-radius: 5px;
         }
+        /*
         .firstlines {
             border: 0.5px solid rgb(63, 62, 62);
             border-radius: 2px;
             margin-top: 1em;
         }
+        */
         .wrt {
             text-align: center;
         }
@@ -187,29 +200,20 @@
         }
         .lastsongs {
             display: flex;
-            width: 100%;
+            width: 80%;
             justify-content:space-around;
         }
-        .span {
-            color: #FFFFFF;
-            margin-left: 2em;
-        }
-        .kingkunta, .i {
-            display:flex;
-            width: 50%;
-            flex: 0 0 auto;
-            justify-content: space-between;
-        }
-        
+        p {font-family: 'Montserrat', sans-serif;}
 
     </style>
 </head>
 <body onload="message();">
     <nav class="navigation">
         <a href="#main" class="skip">Skip to Content</a>
-    
-        <a href="landing.html">MUSIC</a><span class="span">  </span>
-        <a href="contact.copy2.html">CONTACT </a><span class="span"></span>
+        
+        <a href="index.html">HOME </a><span>|</span>
+        <a href="landing.html">MUSIC</a><span> | </span>
+        <a href="contact.copy2.html">CONTACT </a><span>|</span>
         <a href="skills.html">SKILLS</a>
         
     </nav>
@@ -219,29 +223,29 @@
                 </div>
                 <hr class="firstlines">
                 <div>
-                    Frank Ocean's Blonde is a Timeless Masterpiece</p>
+                    <p>Frank Ocean's Blonde is a Timeless Masterpiece</p>
                 </div>
                 <div>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7eGfAwdNBHWYXSr4Dsx2hW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"> Spotify</iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7eGfAwdNBHWYXSr4Dsx2hW?utm_source=generator" width="300" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
                 <hr class="firstlines">
+                
                 <div>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde minima vero eveniet a culpa itaque, dolorum asperiores porro impedit saepe facere quis velit! Omnis ab voluptatum, non suscipit est facere.</div>
-                <div>
+                    <p>why is this not working</p>
                 </div>
             </div>
             <div class="col2">
                 <div class="img">
-                    <img src="../project/images/toptenalbums.png" class="alb" alt="Album Ranking" width="400" height="auto">
+                    <img src="../project/images/toptenalbums.png" class="alb" alt="Album Ranking" width="400" height="450">
                 </div>
                 <div class="text">
                     <p>Click <a href="#section2">here</a> for a ranking of my top ten personal albums. These records are fundamental in defining my music taste and they provide the soundtrack for my life.</p>
                 </div>
                 <div class="text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sint numquam. Recusandae cumque quis eum in commodi cupiditate? Voluptatem quia voluptates pariatur omnis quas dolores necessitatibus id? Cumque, eligendi blanditiis.
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sint numquam. Recusandae cumque quis eum in commodi cupiditate? Voluptatem quia voluptates pariatur omnis quas dolores necessitatibus id? Cumque, eligendi blanditiis.</p>
                 </div>
                 <div class="text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde minima vero eveniet a culpa itaque, dolorum asperiores porro impedit saepe facere quis velit! Omnis ab voluptatum, non suscipit est facere.
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde minima vero eveniet a culpa itaque, dolorum asperiores porro impedit saepe facere quis velit! Omnis ab voluptatum, non suscipit est facere.</p>
                 </div>
             </div>
             <div class="col3">
@@ -249,13 +253,13 @@
                 </div>
                 <hr class="firstlines">
                 <div>
-                   This will be an atricle about SZA's CTRL
+                   <p>This will be an atricle about SZA's CTRL</p>
                 </div>
                 <div>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/60djh9pYPQ6Q8rQOJfOY83?utm_source=generator&theme=0" width="90" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/60djh9pYPQ6Q8rQOJfOY83?utm_source=generator&theme=0" width="300" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
                 <hr class="firstlines">
-                <div class="text"> Maybe this is causing the overflow</div>
+                <p>i dont even know</p>
             </div>
         </div>
     <hr>
@@ -282,8 +286,8 @@
 
                         FRENCH EXIT<br>The cover art for French Exit by TV Girl beautifully exemplifies lovers capturing the exact feeling of young love. The clear portrayal of love and comfort that you feel in a lover's arms is dramaticized by the woman pictured right's joyous expression, despite a more ominous dark background. Feelings closely associated with falling  in love topples the mood and sets a tone for the album that picks at hearts of the masses. The contrast between the darkness and the couple hugging represents phrases like "you are the light of my life" which is synonymous with the feelings of falling deeply in love with someone. Cover art provides a lens that allows listeners to better understand the lyrics and meaning behind the songs. These tracks represent the various stages of beginning to love someone. The infatuation, the confusion, the obsession, the love, the denial, the guilt, the overwhelming culmination of feelings that are sometimes too special to put into words. French Exit's exemplification of love and warmth reflect in the albums use of strings and melodic kick-drum sequences.</p>
                 </div>
-                <hr>
-                <hr>
+            <hr>
+            <hr>
             </article>
                 <div class="flexswimming">
                     <section>
@@ -292,8 +296,6 @@
                     <p class="swimming">
                         SWIMMING<br>Mac Miller's album Swimming is full of rhythmic jazz-influenced beats and melodic synths that bring an ethereal sense of emotion to listeners. However, careful analysis of the album art expresses a much darker tone. For much of his career, Mac fell victim to substance abuse issues that left him with feeling of emptiness on top of a wildly successful career. Miller is pictured sitting in a pink suit with defeated posture and facial expressions. Although no direct conclusions can be made to his bare feet, we may assume that it may follow the representation of death in art (Moyer, 2019). With such a tone in mind, analysis of the cover art  to be a reflection of Mac's mental state. Mac's bright pink suit distracts audiences from his exhausted posture, signaling that how he masks many of his deepest personal issues with a bubbly personality and upbeat songs. The most chilling of realizations, however, is understood in the frame of what Mac is sitting inside. Dark and ominous themes of death and struggle help audiences draw a comparison between this small doorway where he slumps to be representative of a coffin.</p>
                 </div>
-                <hr>
-                <hr> 
             <article>
                 
                 <hr>
@@ -313,30 +315,34 @@
         </div>  
         <article class="reviews" id="section2">
             <div class="floatclear"></div>
-                <img src="../project/images/blackpanther.jpeg" class="blackpanther" height="300" width="300">
-                <p> I plan to fill this space with a full length album review of Black Panther The Album Music From and Inspired By Kendrick Lamar and SZA.</p>
-            <div class="floatclear"></div>
-                <img src="../project/images/becausetheinternet.jpeg" class="becausetheinternet" height="300" width="300">
-                <p>I plan to fill this space with a full length album review of Because the Internet by Childish Gambino.</p>
-            <div class="floatclear"></div>
-                <img src="../project/images/channelorange.jpeg" class="channelorange" height="300" width="300">
-                <p> I plan to fill this space with a full length album review of channel ORANGE by Frank Ocean .</p>
-            <div class="floatclear"></div>
-                <img src="../project/images/pureheroine.png" class="pureheroine" height="300" width="300">
-                <p> I plan to fill this space with a full length album review of Pure Heroine by Lorde.</p>
-            <div class="floatclear"></div>
-                <img src="../project/images/am2.jpeg" class="am" height="300" width="300">
-                <p> I plan to fill this space with a full length album review of AM by Arctic Monkeys.</p>
-            <div class="floatclear"></div>
-                <img src="../project/images/blueslidepark.jpeg" class="blueslidepark" height="300" width="300">
+                <img src="../project/images/blackpanther.jpeg" alt="back panther album cover" class="blackpanther" height="300" width="300">
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
             <div class="floatclear"></div>
-                <img src="../project/images/MOTM.jpeg" class="motm" height="300" width="300">
-                <p> I plan to fill this space with a full length album review of Man on The Moon: The End of Day by Kid Cudi</p>
+                <img src="../project/images/becausetheinternet.jpeg" alt="because the internet album cover" class="becausetheinternet" height="300" width="300">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus excepturi rerum, iure laboriosam sit veniam voluptas officiis ipsum laudantium inventore unde, aliquam maxime. Magni, deleniti. Neque minima incidunt excepturi cupiditate.</p>
             <div class="floatclear"></div>
-                <img src="../project/images/GKMC.jpeg" class="gkmc" height="300" width="300"> 
-                <p> I plan to fill this space with a full length album review of good kid, m.A.A.d city by Kendrick Lamar.</p>
+                <img src="../project/images/channelorange.jpeg" alt="channel orange album cover" class="channelorange" height="300" width="300">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
             <div class="floatclear"></div>
+                <img src="../project/images/pureheroine.png" alt="pure heroine album cover" class="pureheroine" height="300" width="300">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
+            <div class="floatclear"></div>
+                <img src="../project/images/am2.jpeg" alt="AM album cover" class="am" height="300" width="300">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
+            <div class="floatclear"></div>
+                <img src="../project/images/blueslidepark.jpeg" alt="blue slide park album cover" class="blueslidepark" height="300" width="300">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
+            <div class="floatclear"></div>
+                <img src="../project/images/MOTM.jpeg" alt="man on the moon album cover" class="motm" height="300" width="300">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
+            <div class="floatclear"></div>
+                <img src="../project/images/GKMC.jpeg" alt="good kid mad city album cover" class="gkmc" height="300" width="300"> 
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, atque maxime ex cupiditate facilis eaque aspernatur harum magnam! Soluta architecto quo quia ea nihil ex eius sequi inventore asperiores eveniet.</p>
+            <div class="floatclear"></div>
+                <img src="../project/images/rumours.jpeg" alt="roumours album cover" class="rumours" height="300" width="300">
+                <p>great album</p>
+            <div class="floatclear"></div>
+
             <hr>
             <hr>
             <h2>Resist the "Pimp"</h2>
@@ -345,15 +351,18 @@
                 This hip-hop album has contributed to aspects of my identity that help define who I am and who I stand for. Upon the album's release, I only knew a select few songs, those songs being “King Kunta”, “Alright”, “i” and “The Blacker The Berry”. As I moved through high school this album greatly developed my taste in hip-hop music and my involvement in socio-political movements like Black Lives Matter. "Alright" was used as a universal anthem, uniting people from all walks of life as this movement progressed. </p>
 
                 <p>As time goes on, this album becomes increasingly important to me, my learning, and my morals.</p>
-                    <div class="kingkunta">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0N3W5peJUQtI4eyR6GJT5O?utm_source=generator" width="80%" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3ODXRUPL44f04cCacwiCLC?utm_source=generator" width="80%" height="auto" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    <div class="youtube">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0N3W5peJUQtI4eyR6GJT5O?utm_source=generator" width="300" height="352"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3ODXRUPL44f04cCacwiCLC?utm_source=generator" width="300" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
 
                 <p>What I’d like to examine is how Kendrick’s To Pimp A Butterfly became so popular and was so effective in connecting with audiences. What did people value about music? How did this music fit into these people’s lives? What values does Kendrick possess that made this album as successful as it is? What is it about this album that allowed Kendrick to capture the Black experience that millions face so well? Aside from being extremely well produced with catchy upbeat choruses, I think there is a much deeper meaning behind the success and implementation of this album in listeners' lives. From representation to empowerment, I’d like to analyze how this album reached audiences through rhetoric.</p>
 
                 <p>A massive element of developing his fanbase and how they resonate with his music is Kendrick’s credibility. Kendrick sat down in an interview with MTV, and closely dissected the album track by track, revealing to the interviewer and audiences what the inspirations and goals of every song were. In this interview with MTV, Kendrick says the album's goal is to highlight the “pimping” of successful, unique, Black men in this country, and the importance of resisting this ideology. Kendrick Lamar says, “It represents using my celebrity for good and... not being pimped by the industry” (MTV). Being “pimped” is having your success or values exploited and glorified in the media without your own attempt at making this happen. Kendrick touches on this “pimping” throughout the album and shows how it's a collective struggle for the Black community. He informs us that although he’s become an international sensation, he’s still connected and representative of his Black roots and urban struggles. Fans value Kendrick’s work because he refuses to fall victim to pimping. His music is successful because fans appreciate the sense of ‘realness’ that he brings to the table. I think that this "pimping" that appears across the album is exactly what made listeners deeply resonate with not just the album but Kendrick's morals as well. </p>
                     
+                    <div class="kendrickinterview">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AUEI_ep9iDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
 
                 <p>A large aspect of Kendrick’s career has been ignored by the mainstream media, but it's something that he highlights on this album. This “pimping” has made him into the sensation he is today, however, he wants to reinstate ties with the Black community and provide empowerment for them by suggesting that this “pimping” was not done through his intentions. Something that fans value in Kendrick’s music is his resistibility to ‘selling out’ to the industry. Despite being surrounded by drugs, fame, money, and other materialistic things, his music is still representative of Black struggles, and that’s something that fans appreciate. Having the ability to resist the industry in such an outward way on this album is what I think helped Kendrick connect with audiences and be a part of things like the Black Lives Matter movement with "Alright".</p>
 
@@ -361,14 +370,12 @@
 
                 <p>Being able to sit down and analyze this album has been an extremely important factor for me in realizing the issues that lie within United States political-economic practices. As Kendrick connects with his audience through authenticity and pride, he describes “pimping” as an evil that plagues successful Black men, nationwide. The album isn’t only a musical masterpiece, it’s a learning experience. Understanding the issues that exist with racial boundaries and success in the United States sparks my interest in learning about the policies and other factors that contribute to things like “pimping”. After hearing Kendrick’s own thoughts on the making of To Pimp A Butterfly, I want to dissect more of his work, now that I can see the time, consideration, and lessons that are implemented within them. From my first experience to my current experience with this album, I realize that it continues to affect me and morals regarding subjects in American culture. Understanding “pimping” and how it effects Black Americans is an essential part in understanding who Kendrick Lamar is, and what his music stands for.</p>
                     <div class="lastsongs">
-                        <div>
-                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3iVcZ5G6tvkXZkZKlMpIUs?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" alt="Alright by Kendrick Lamar"></iframe>
-                        </div>
-                        <div>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Mtt6tZSZA9cXTHGSGpyh0?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy" alt="The Blacker the Berry by Kendrick Lamar"></iframe>
-                        </div>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3iVcZ5G6tvkXZkZKlMpIUs?utm_source=generator&theme=0" width="300" height="152" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5Mtt6tZSZA9cXTHGSGpyh0?utm_source=generator&theme=0" width="300" height="152"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                     </div>
             </div>
+            </article>
+            <!-- 
             <hr>
             <hr>
         </article>
@@ -382,5 +389,6 @@
                 </div>
             </div> 
         </article>
+        -->
 </body>
 </html>
