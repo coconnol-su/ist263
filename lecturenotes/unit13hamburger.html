@@ -42,11 +42,14 @@
         function showNav () {
             document.getElementById("alllinks").style.display = "block";
         }
+        function hideNav () {
+            document.getElementById("alllinks").style.display = "none";
+        }
     </script>
 </head>
 <body>
     <div class="toplevel">
-        <img id="hamburger" onclick="showNav();" src="https://laferger.github.io/ist263/images/hamburger.png">
+        <img id="hamburger" onclick="showNav();" src="https://laferger.github.io/ist263/images/hamburger.png" width="20" height="20">
         <p id="close" onclick="hideNav();">X</p>
     </div>
     <div id="alllinks">
