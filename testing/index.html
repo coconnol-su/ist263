@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="shortcut icon" type="image/x-icon" href="../project/images/favicon.ico">
         <style> 
-            .text {float: right;}
-            .par1 {float: right; margin-right: 10px;}
+            .text {float: left;}
+            .par1 {float: left; margin-right: 10px;}
             .clear {clear: both;}
-            .img1 {float: left; margin-right: 10px;}
+            .img1 {float: right; margin-right: 10px;}
             .skip {
                     background-color: #4DC149;
                     padding: 5px;
@@ -31,18 +31,21 @@
                 background-color: #000000;
                 background-size: 50% auto;
             }
-            .swimming, .tvgirl, .tpab, .melodrama {
-                width: 60%;
-                display: flex;
-                justify-content: center;
-                text-align: center;
-                margin-left: 10em;
-                margin-right: 10em;
-                line-height: 1.8;
-                font-size: 125%;
-            }
             body {
-                background-color: #adb8ae;
+                background-color: #a3bed1;
+            }
+            .top {
+                background-color: #75c6ff;
+                border-radius: 0.5em;
+            }
+            .bottom {
+                background-color: #3eacfa;
+                border-radius: 0.5em;
+                padding: 0.1em
+            }
+            .navigation {
+                background-color: #000000;
+                padding: 1em;
             }
             
 
@@ -59,13 +62,17 @@
         </nav>
          
         <main>
-        <img src="../project/images/pfp.png" class="img1" alt="Profile Picture" width="250px" height="auto">
-            <h1> Colin Connollys Biography</h1>
-            <p id="main">Hi! my name is Colin Connolly. I'm a third-year student at Syracuse University studying Communication and Rhetoric. I'm double minoring in Marketing and Information Management and Technology. My three areas of study provide me with the skillset to greatly understand audience engagement and behavior within media. My professional interests include working with studio and live event production, music promotion, music business, and content creation.  <br></p>
+        <div class="top">
+            <img src="../project/images/pfp.png" class="img1" alt="Profile Picture" width="250px" height="auto">
+                <h1> Colin Connollys Biography</h1>
+                <p id="main">Hi! my name is Colin Connolly. I'm a third-year student at Syracuse University studying Communication and Rhetoric. I'm double minoring in Marketing and Information Management and Technology. My three areas of study provide me with the skillset to greatly understand audience engagement and behavior within media. My professional interests include working with studio and live event production, music promotion, music business, and content creation.  <br></p>
+        
 
              <p>Im a transfer student from the University of Pittsburgh where I studied film production. Upon arriving at Syracuse last fall, Ive maintained a <strong>3.95 overall GPA</strong> and plan to maintain a high GPA for the rest of my time here.</p>
+            
              <div class="clear"></div>
-
+            </div>
+        <div class="bottom">
         <h2> <strong>Personal Information</strong></h2>
 
         <p>It Syracuse, I'm involved with several clubs and organizations including: 
@@ -75,7 +82,9 @@
             <li> I love the outdoors and love to hike and see nature.</li>
             <li>I am very interested in photography and videography and hope to do more personal work in those areas!</li>
         </ul>
+        </div>
         </main>
+    
         
         <footer>
             <hr>

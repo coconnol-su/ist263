@@ -15,6 +15,7 @@
             document.getElementById("navLink1").style.display = "block";
             document.getElementById("navLink2").style.display = "block";
             document.getElementById("navLink3").style.display = "block";
+            document.getElementById("navLink4").style.display = "block";
             document.getElementById("hamburger").style.display = "none";
             document.getElementById("close").style.display = "block";
         }
@@ -22,6 +23,7 @@
             document.getElementById("navLink1").style.display = "none";
             document.getElementById("navLink2").style.display = "none";
             document.getElementById("navLink3").style.display = "none";
+            document.getElementById("navLink4").style.display = "none";
             document.getElementById("hamburger").style.display = "block";
             document.getElementById("close").style.display = "none";
         }
@@ -45,7 +47,7 @@
         @media only screen and (min-width: 700px) {
             #hamburger {display:none;}
             #close {display:none;}
-            nav {display:block;}
+            #navLink1, #navLink2, #navLink3, #navLink4 {display:block;}
         }
         .skip {
             background-color: #4DC149;
@@ -92,7 +94,6 @@
             margin-top: 70px;
             flex: 1;
             margin: 20px;
-            padding: 10px;
             justify-content: center;
             text-align: center;
         }
@@ -103,6 +104,10 @@
             margin-right: 15px;
             flex: 1;
             text-align: center;
+        }
+        .playlists {
+            display: flex;
+            justify-content: center;
         }
         .alb {
             width: 350px;
@@ -274,6 +279,24 @@
             font-size: 0.5em;
             display: block;
         }
+        nav a{
+        text-decoration: none;
+        color:#1D1B34;
+        }
+        #hamburger, #close {
+            font-size:3em;
+            text-align:left;
+        }
+        #navLink1, #navLink2, #navLink3, #navLink4 {
+            text-align:left;
+            padding-bottom: .5em;
+        }
+        .hamburger {
+            display:block;
+            text-decoration: none;
+            color:#1D1B34;
+            text-align:right;
+        }
 
     </style>
 </head>
@@ -282,51 +305,51 @@
     <div class="toplevel">
         <div id="hamburger"><img onclick="showNav();" src="../project/images/menu.png" alt="menu icon"></div>
             <div id="close" onclick="hideNav();">X</div>
-                <nav id="alllinks" class="navigation">
+                <nav id="nav">
                     <a href="#main" class="skip">Skip to Content</a>
-                    <a id="navLink1" href="index.html">HOME </a><span>|</span>
-                    <a id="navLink2" href="landing.html">MUSIC</a><span> | </span>
-                    <a id="navLink3" href="contact.copy2.html">CONTACT </a><span>|</span>
+                    <a id="navLink1" href="index.html">HOME </a><span></span>
+                    <a id="navLink2" href="landing.html">MUSIC</a><span>  </span>
+                    <a id="navLink3" href="contact.copy2.html">CONTACT </a><span></span>
                     <a id="navLink4" href="skills.html">SKILLS</a>
                 </nav>
     </div>
     </header>
         <div class="cols">
             <div class="col1">
-                <div class="img"><img src="../project/images/blondecover.jpeg" class="blonde" alt="Blonde Album Cover"><br>
+                <div class="img"><img src="../project/images/melodramacover.webp" class="blonde" alt="Blonde Album Cover"><br>
                 </div>
                 <!--<hr class="firstlines">-->
                 <div>
                     <p>Blonded <span style="font-size:14pt;"></span></p>
                     <p>Frank Ocean's Blonde is a Timeless Masterpiece</p>
                 </div>
-                <div>
+                <div class="playlists">
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/7eGfAwdNBHWYXSr4Dsx2hW?utm_source=generator" width="300" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
                 <!--<hr class="firstlines">-->
             </div>
             <div class="col2">
                 <div class="img">
-                    <img src="../project/images/toptenalbums.png" class="alb" alt="Album Ranking" width="400" height="450">
+                    <img src="../project/images/MY-TOP-10-ALBUMS.png" class="alb" alt="Album Ranking" width="400" height="450">
                 </div>
                 <div class="text">
                     <p>Click <a href="#section2">here</a> for a ranking of my top ten personal albums. These records are fundamental in defining my music taste and they provide the soundtrack for my life.</p>
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, sint numquam. Recusandae cumque quis eum in commodi cupiditate? Voluptatem quia voluptates pariatur omnis quas dolores necessitatibus id? Cumque, eligendi blanditiis.</p>
+                    <p>DISCLAIMER: These are the top ten albums that have impacted my music taste and that have been in my rotation for years. They’re what I find to be ‘no skips’ from start to finish, which is a difficult feat to achieve.</p>
                 </div>
                 <div class="text">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde minima vero eveniet a culpa itaque, dolorum asperiores porro impedit saepe facere quis velit! Omnis ab voluptatum, non suscipit est facere.</p>
+                    <p>I understand that in terms of production, lyricism, and delivery that these are not the top ten albums ever made. .</p>
                 </div>
             </div>
             <div class="col3">
-                <div class="img"><img src="../project/images/ctrlcover.png" class="control" alt="CTRL Album Cover">
+                <div class="img"><img src="../project/images/frenchexitcover.jpeg" class="control" alt="French Exit Album Cover">
                 </div>
                 <!--<hr class="firstlines">-->
                 <div>
-                   <p>This will be an atricle about SZA's CTRL</p>
+                   <p><a href="#section3">French Exit</a> by TV girl explores the different emotions of young love</p>
                 </div>
-                <div>
+                <div class="playlists">
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/60djh9pYPQ6Q8rQOJfOY83?utm_source=generator&theme=0" width="300" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
                 <!--<hr class="firstlines">-->
@@ -351,7 +374,7 @@
             </article>
             <article>
                 <div class="flexfrenchexit">
-                    <section>
+                    <section id="section3">
                     <img src="../project/images/frenchexitcover.jpeg" class="afrenchexit" alt="French Exit by TV Girl" height="400" width="400">
                     </section>
                     <p class="titles">
@@ -391,56 +414,31 @@
             </article>
         </div>  
         <div id="section2" class="container">
-            <img src="../project/images/1/10.jpg" width="300" height="300" alt="Number 10">
-            <p>Releasing just a week before Marvel’s major blockbuster production, Black Panther in February of 2018, Kendrick Lamar released Black Panther: The Album. With help from big names in the industry like SZA, ScHoolboy Q, Khalid, Swae Lee, Travis Scott, The Weeknd, and more, Kendrick undoubtedly delivered one of the most versatile hip-hop projects of the decade. Collaboration of almost exclusively Black artists takes this album to new heights, just as the film did. Both Black Panther the film and album establish themselves as benchmarks of Black excellence in the entertainment industry, showing the power that this community holds despite a history of systemic oppression. Moving into the music, groovy and upbeat highlights of the album include All The Stars, The Ways, King’s Dead, Big Shot, and Pray For Me. Tracks like Black Panther, X, I Am, and Redemption provides a more melodic and narrative presence strengthening the tie between the album and the film. What I admire so much about this album is Kendrick’s promise to involve authentic African instruments, artists, and music styles. </p>
+            <img src="../project/images/1/5.jpg" width="300" height="300" alt="Number 5">
+            <p>Black Panther: The Album. Releasing just a week before Marvel’s major blockbuster production, Black Panther in February of 2018, Kendrick Lamar released Black Panther: The Album. With help from big names in the industry like SZA, ScHoolboy Q, Khalid, Swae Lee, Travis Scott, The Weeknd, and more, Kendrick undoubtedly delivered one of the most versatile hip-hop projects of the decade. Collaboration of almost exclusively Black artists takes this album to new heights, just as the film did. Both Black Panther the film and album establish themselves as benchmarks of Black excellence in the entertainment industry, showing the power that this community holds despite a history of systemic oppression. Moving into the music, groovy and upbeat highlights of the album include All The Stars, The Ways, King’s Dead, Big Shot, and Pray For Me. Tracks like Black Panther, X, I Am, and Redemption provides a more melodic and narrative presence strengthening the tie between the album and the film. What I admire so much about this album is Kendrick’s promise to involve authentic African instruments, artists, and music styles. </p>
             <img src="../project/images/blackpanther.jpeg" width="300" height="300" alt="Black Panther Album Cover">
           </div>
           <div class="container">
             <img src="../project/images/lowendtheory.jpeg" width="300" height="300" alt="Low End Theory Album Cover">
-            <p>Text in the middle</p>
-            <img src="../project/images/1/9.jpg" width="300" height="300" alt="Number 9">
+            <p><strong>The Low-End Theory</strong> by A Tribe Called Quest is one of those albums that everyone should at least know about if they haven’t listened to it already. This album serves as a foundation of hip-hop in its early stages of evolution beyond the explosion of the genre over the decade of the 80s. Tribe themselves solidify themselves as kings of the ‘boom bap’ era through their extensive catalog of hits released throughout the early 90s, and this album is possibly the best example of the power that they held on the game. I personally love this album because of its historic impact on the genre of hip-hop and its ability to stay true to the genre while simultaneously pushing the limits of what hip-hop and rap can sound like.  </p>
+            <img src="../project/images/1/4.jpg" width="300" height="300" alt="Number 4">
           </div>
           <div class="container">
-            <img src="../project/images/1/8.jpg" alt="Number 8" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="../project/images/pureheroine.png" alt="Pure Heroine ALbum Cover" width="300" height="300">
+            <img src="../project/images/1/3.jpg" alt="Number 3" width="300" height="300">
+            <p>Because The Internet. Childish Gambino has always been an artist to showcase a sort of avant-garde style in his music and associated visuals. At the time, Because The Internet was the largest testament to his style. Gambino shares his reflection on how social media and the new digital age affect social interactions and our relationships. Unlike some other projects on this list, my affection for this album doesn’t just come from a place of respect for originality and art production. It’s catchy lyrics and infectious beats bring the album to new levels. Tracks like “3005”, “I. The Worst Guys”, “IV. Sweatpants”, and “I. Pink Toes” are still heavily streamed today and prove how this album fits into the hip-hop/rap scene of the last decade. </p>
+            <img src="../project/images/becausetheinternet.jpeg" alt="Because The Internet Album Cover" width="300" height="300">
           </div>
           <div class="container">
-            <img src="../project/images/am2.jpeg" alt="AM Album Cover" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="../project/images/1/7.jpg" alt="Number 7" width="300" height="300">
+            <img src="../project/images/MOTM.jpeg" alt="Man on the Moon Album Cover" width="300" height="300">
+            <p> Man on The Moon: The End of Day. Kid Cudi is one of those artists that’s been in my rotation since I started listening to music. Man on the Moon: End of the Day brought us tracks like “Soundtrack 2 My Life”, “Pursuit of Happiness”, “Day ‘N’ Nite”, and “Enter Galactic” which collectively provide a nostalgic sound for the time period of the early 2010s. This album falls at number two on my list because of its replay-ability, versatility, and emotion-provoking nature. As you listen, it’s like a rollercoaster of excitement, nerves, pain, sorrow, and happiness as you roll from track to track. </p>
+            <img src="../project/images/1/2.jpg" alt="Number 2" width="300" height="300">
           </div>
           <div class="container">
-            <img src="../project/images/1/6.jpg" alt="Number 6" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="../project/images/blueslidepark.jpeg" alt="Blue Slide Park ALbum Cover" width="300" height="300">
-          </div>
-          <div class="container">
-            <img src="../project/images/MOTM.jpeg" alt="Man on The Moon Album Cover" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="../project/images/1/5.jpg" alt="Number 5" width="300" height="300">
-          </div>
-          <div class="container">
-            <img src="../project/images/1/4.jpg" alt="Number 4" width="300" height="300">
-            <p>Text in the middle</p>
+            <img src="../project/images/1/1.jpg" alt="Number 1" width="300" height="300">
+                <p>good kidd m.A.Ad City. I think that most modern-day rap fans agree with having good kid, m.A.A.d city in their top five rankings. Despite releasing in 2012, this project from Kendrick Lamar provides countless hits that have cycled their way through the charts in recent years. Lamar’s ability to provide a cohesive narrative storyline in his albums is a testament to his artistry and ability to create masterpieces. Both lyric-wise and production-wise, this album takes the crown any day. You could listen to the album three times in a row and swill find new meanings in the lyrics each time you listen, which Is a main reason on why I think it deserves the #1 spot. 
+                </p>
             <img src="../project/images/GKMC.jpeg" alt="Good Kid Mad City ALbum Cover" width="300" height="300">
           </div>
-          <div class="container">
-            <img src="../project/images/channelorange.jpeg" alt="Channel ORANGE Album Cover" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="../project/images/1/3.jpg" alt="Number 3" width="300" height="300">
-          </div>
-          <div class="container">
-            <img src="../project/images/1/2.jpg" alt="Number 2" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="image2.jpg" alt="Image 2" width="300" height="300">
-          </div>
-          <div class="container">
-            <img src="../project/images/GKMC.jpeg" alt="Good Kid Mad City Album Cover" width="300" height="300">
-            <p>Text in the middle</p>
-            <img src="../project/images/1/1.jpg" alt="Number 1" width="300" height="300">
-          </div>
-
             <hr>
             <hr>
             <h2>Resist the "Pimp"</h2>

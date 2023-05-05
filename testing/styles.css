@@ -5,21 +5,21 @@ body {
     font-style: normal;
     /* font-weight: bold; */
     }
-    nav {
+    /* nav {
         background-color: #000000;
-    }
+    }*/
     nav a {
         color: #adb8ae;
     }
     nav a:hover {
         background-color: #D2D6DA;
     }
-    nav {
+    /*nav {
         padding: 20px;
         margin-bottom: 30px;
         display: flex;
         text-align: center;
-    }
+    }*/
     p {
         margin-bottom: 10px;
     }
