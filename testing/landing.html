@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="../project/images/favicon.ico">
     <script>
-        function showNav() {
+        /*function showNav() {
             document.getElementById("navLink1").style.display = "block";
             document.getElementById("navLink2").style.display = "block";
             document.getElementById("navLink3").style.display = "block";
@@ -26,7 +26,7 @@
             document.getElementById("navLink4").style.display = "none";
             document.getElementById("hamburger").style.display = "block";
             document.getElementById("close").style.display = "none";
-        }
+        }*/
     </script>
     <style>
          /*@media only screen and (min-width: 800px) {
@@ -39,10 +39,10 @@
         @media only screen and (max-width: 600px) {
             .cols {width: 100%}
         }
-        @media only screen and (max-width: 700px) {
+       /* @media only screen and (max-width: 700px) {
             #hamburger {display:block;}
             #close {display:none;}
-            #navLink1, #navLink2, #navLink3, #navLink4 {display:none;}
+            #navLink1, #navLink2, #navLink3, #navLink4 {display:none;}*/
         }
         @media only screen and (min-width: 700px) {
             #hamburger {display:none;}
@@ -264,7 +264,7 @@
             max-width: 50%;
             text-align: center;
         }
-        #hamburger, #close {
+        /*#hamburger, #close {
         font-size:3em;
         text-align:left;
         }
@@ -289,20 +289,25 @@
             text-decoration: none;
             color:#1D1B34;
             text-align:right;
-        }
+        }*/
+        .toplevel {
+                background-color: #000000;
+                padding: 1.5em;
+                text-align: center;
+            }
 
     </style>
 </head>
 <body>
     <header>
     <div class="toplevel">
-        <div id="hamburger"><img onclick="showNav();" src="../project/images/menu.png" alt="menu icon"></div>
-            <div id="close" onclick="hideNav();">X</div>
+        <!--<div id="hamburger"><img onclick="showNav();" src="../project/images/menu.png" alt="menu icon"></div> 
+            <div id="close" onclick="hideNav();">X</div> !-->
                 <nav id="nav">
                     <a href="#main" class="skip">Skip to Content</a>
-                    <a id="navLink1" href="index.html">HOME </a><span></span>
-                    <a id="navLink2" href="landing.html">MUSIC</a><span>  </span>
-                    <a id="navLink3" href="contact.copy2.html">CONTACT </a><span></span>
+                    <a id="navLink1" href="index.html">HOME </a><span>|</span>
+                    <a id="navLink2" href="landing.html">MUSIC</a><span>|</span>
+                    <a id="navLink3" href="contact.copy2.html">CONTACT </a><span>|</span>
                     <a id="navLink4" href="skills.html">SKILLS</a>
                 </nav>
     </div>
